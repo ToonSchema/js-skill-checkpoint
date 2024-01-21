@@ -2,6 +2,10 @@
 
 function filterInStockProducts(products) {
   // เริ่มเขียนโค้ดตรงนี้
+  let productInStock = products.filter(function (products) {
+    return products.quantity > 0
+  })
+  return productInStock
 }
 
 // ตัวอย่างการใช้งาน
